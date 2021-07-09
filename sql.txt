@@ -1,0 +1,9 @@
+CREATE DATABASE mydb;
+use mydb;
+CREATE TABLE logs (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	methodQuery VARCHAR(20),
+	endpoint VARCHAR(255),
+	dataReturn VARCHAR(50),
+	date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+	
